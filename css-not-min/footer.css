@@ -1,0 +1,26 @@
+.footer {
+	height: 32px;
+	position: relative; 
+    color: #fff;
+    background-color: #9BB3B5; 
+    margin: 0 auto;
+} 
+
+.footer ul.footer_ul {
+    display: block;
+    margin-top: 0px;
+}
+    .footer ul.footer_ul li {
+        float: left;
+        margin-right: 10px;
+        margin-left: 30px;
+        padding-top: .4em;
+        padding-bottom: 0.4em
+    }
+        .footer ul.footer_ul li > a {
+            color: rgb(68,68,68);
+            font-size: 12px;
+        }
+    .footer ul.footer_ul li > a:hover {
+    color: rgb(250,235,215);
+}

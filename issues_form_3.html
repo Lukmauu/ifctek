@@ -1,0 +1,30 @@
+
+	<div class="issues_form" title="Subscribe to iForcetek Techfuse blog" style="height : 380px ; width : 450px ;">
+    
+        
+
+        
+            <div>
+    
+                <form action="/gdform.php" method="post">
+                    <fieldset>
+                        <legend>Please fill out the form below, thank you.</legend>
+            
+                            <div>
+                            <label>Name</label>
+                            <input name="author2" type="text" class="inputclass" id="author2" size="24" />
+                            </div>
+                            <div>
+                            <label>E-mail</label>
+                            <input name="email" type="text" class="inputclass" id="email" />
+                            </div>
+                            <!-- onclick="MM_validateForm('author2', '', 'R', 'email', '', 'R', 'subject', '', 'R', 'message', '', 'R'); return document.MM_returnValue" -->
+                            <input name="submit" type="submit"  value="Subscribe" onclick="MM_validateForm('author2', '', 'R', 'email', '', 'R', 'subject', '', 'R', 'message', '', 'R'); return document.MM_returnValue"/>
+                            <input type="hidden" name="subject" value="Form Submission" />
+                            <input type="hidden" name="redirect" value="thankyou.html" />
+            
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+

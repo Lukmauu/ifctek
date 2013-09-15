@@ -1,0 +1,66 @@
+/* ALL THE NAV ESPECIAL STYLES */
+.active-nav{border-top:4px solid rgb(254,131,0);margin-top:-4px;}
+
+/*
+<div id="topbg" class="dn">
+                <img src="images/background_nav_light.jpg" width="710" height="52"
+    */
+
+.top {
+    height : 80px ;
+    background : url(../images/background_iforcetex_logo_light.jpg) 2% 45% no-repeat #fff;
+    /*position: relative;*/
+}
+.top ul.show-desktop{
+    float : right ;
+    position: relative;
+    margin-top : 1% ;
+    width : 750px ;
+    background : url(../images/background_nav_light.jpg) ;/* align the background */
+    background-position: 25px 0px;
+    background-repeat : no-repeat ;
+    overflow : visible ;
+}
+.top ul.show-desktop li {
+    float: left;
+    margin : 3px 2px 0px 2px ;
+   
+}
+    .top ul.show-desktop li:first-child {
+        margin-left: 65px;
+    }
+.top ul.show-desktop li a {
+    display : block ;
+    text-align : center ;
+    font-size : 12px ;
+    background-image : url('../images/label.png');
+    background-repeat : no-repeat ;
+    background-position : 0px -150px ;
+    width : 73px ;
+    height : 70px ;
+    font-weight : normal ;
+    font-family : Verdana , 'Trebuchet MS' , Helvetica , Arial ;
+    color : rgb( 255 , 255 , 255 ) ;
+    color : rgb(0,0,0);
+    padding : 8px 6px 8px 6px;
+    line-height : 1.4em;
+    overflow : visible ;
+}
+.top ul.show-desktop a:link {
+	color : rgb( 255 , 255 , 255 ) ;/* THE COLOR WILL NOT CHANGE */
+}
+.top ul.show-desktop a:visited {
+	color : rgb( 255 , 255 , 255 ) ;/* THE COLOR WILL NOT CHANGE */
+}
+.top ul.show-desktop a:hover {
+    color : rgb( 255 , 255 , 255 ) ;
+    background-position : 0px 0px ;
+}
+.top ul.show-desktop a:active {
+    color : rgb(0, 148, 255);
+}
+ul.show-desktop a:focus { 
+	color : #ff6a00 ;
+}
+
+/* ALL THE NAV INGRETIENTS BUT ESPECIAL STYLES */

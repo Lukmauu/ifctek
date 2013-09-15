@@ -1,0 +1,24 @@
+<div class="issues_form" title="Please fill out the form below, thank you" style="height : 500px ; width : 600px ;">
+    <form action="/gdform.php" method="post">
+        <div>
+            <label>Name</label>
+            <input name="author2" type="text" class="inputclass" id="author2" size="24" />
+        </div>
+        <div>
+            <label>E-mail</label>
+            <input name="email" type="text" class="inputclass" id="email" size="24" />
+        </div>
+        <div>
+            <label>Phone</label>
+            <input name="subject" type="text" class="inputclass" id="subject" size="24" />
+        </div>
+        <div>
+            <label>Your message</label>
+            <textarea name="message" class="inputclass" cols="20" rows="10" id="message"></textarea>
+        </div>
+        <input name="submit" type="submit" onclick="MM_validateForm('author2', '', 'R', 'email', '', 'R', 'subject', '', 'R', 'message', '', 'R'); return document.MM_returnValue" value="Send Message" />
+        <input type="hidden" name="subject" value="Form Submission" />
+        <input type="hidden" name="redirect" value="thankyou.html" />
+    </form>
+</div>
+
