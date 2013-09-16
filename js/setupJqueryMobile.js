@@ -1,0 +1,1 @@
+$(document).on('mobileinit',function(){$.extend($.mobile,{ajaxFormsEnabled:false});});

@@ -1,109 +1,16 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
+<!DOCTYPE html><html><head>
     <title>iForcetek || Your trusted IT solutions partner</title>
     <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="description" content="iForcetek offers IT Solutions in the area of Web Application, Mobile Application, Software Implementation and maintenance support, Software Product development, customization and support." />
     <meta name="keywords" content="Technology Solutions Bellevue, Web App Development Bellevue, Web App Development Seattle, Mobile App Development Bellevue, Mobile App Development Seattle, Small Business Web Bellevue, Technology Solutions Seattle, Small Business Web Seattle, Membership Management, Startup Technology Solutions Bellevue, Startup Technology Solutions Seattle, Web App Development, Mobile Application, iOS, Android App, Windows 7 App, CRM Implementation, IT Consulting, Software Development, Mobile Application, iOS App Development, Android App Development, Windows App Development, AHTML5 App Development, Web Application Development, iforcetek, iForce Tecknologies, iForcetek Techfuse, iForcetek Customer VoiceBox" />
-    <link href="css/jquery_mobile_default-min.css" rel="stylesheet" type="text/css" />
-    <link href="css/mob-iforcetex-style-min.css" rel="stylesheet" type="text/css" />
-    <link href="images/tip-darkgray/tip-darkgray.css" rel="stylesheet" type="text/css" />
-    <link href="css/flexslider-min.css" rel="stylesheet" type="text/css" />
-    <link href="css/main-min.css" rel="stylesheet" type="text/css" />
-    <link href="css/nav-min.css" rel="stylesheet" type="text/css" />
-    <link href="css/footer-min.css" rel="stylesheet" type="text/css" />
-    <link href="css/approach-min.css" rel="stylesheet" type="text/css" />
-    <!--[if lt IE 9]><script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-    <!--[if lt IE 9]><script type="text/javascript" src="js/respond.min.js"></script><![endif]-->
-</head>
-<body>
+<?php include '_includes/header.php'; ?>
 
-    <!--<div id="fb-root"></div>
-    <script>
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            //js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=169107229944367";
-            js.src = "http://connect.facebook.net/en_US/all.js#xfbml=1&appId=169107229944367";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>-->
-
-    <!--[if lte IE 7]>
-        <div class="outerMsgAlert ui-widget" style=" width:100%; ">
-            <div class="msgAlert ui-state-error ui-corner-all" style=" width:900px; margin:0 auto; padding:0.7em; ">
-                <h1>
-                    <span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em; clear:right;"></span>
-                    Your browser is outdated, you may not see all its website content, 
-                    please update your browser. It will take you less then a minute <br /><br /> 
-                <a class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" href="http://windows.microsoft.com/en-US/internet-explorer/download-ie">
-                <span class="ui-button-text" style="color: rgb(28, 148, 196);">
-                    DOWNLOAD HERE
-                </span>
-                </a>
-                </h1>
-        </div>
-     </div>
-    <![endif]-->
-    <div class="outercontainer" data-role="page" id="index">
-        <div class="top" data-enhance="true" data-theme="c"
-            style="height: auto;">
-            <img class="show-mobile mob-top-img" src="images/background_iforcetex_logo2.png" width="202" height="68" alt="mob-top-img"
-                style="width: 202px; margin: 0 auto;" />
-            <ul class="nav show-desktop" data-enhance="false">
-                <li><a rel="external" data-ajax="false" href="index.html">HOME</a></li>
-                <li><a rel="external" data-ajax="false" href="about.html">ABOUT</a></li>
-                <li><a rel="external" data-ajax="false" href="services.html">SERVICES</a></li>
-                <li><a rel="external" data-ajax="false" href="projects.html">PROJECTS</a></li>
-                <li><a rel="external" data-ajax="false" href="clients.html">CLIENTS</a></li>
-                <li><a rel="external" data-ajax="false" href="contact.html">CONTACT</a></li>
-                <li><a rel="external" data-ajax="false" href="http://blog.iforcetek.com" target="_blank">BLOG</a></li>
-                <li><a rel="external" data-ajax="false" href="http://customervoicebox.blogspot.com" target="_blank">VOICEBOX</a></li>
-            </ul>
-            <div class="show-mobile" data-role="header" data-id="constantNav" data-theme="c">
-                <div id="mob-nav-bar" class="show-mobile" data-role="navbar" data-enhance="true" data-theme="c">
-                    <ul>
-                        <li><a rel="external" data-ajax="false" href="index.html" class="ui-btn-active ui-state-persist">HOME</a></li>
-                        <li><a rel="external" data-ajax="false" href="about.html">ABOUT</a></li>
-                        <li><a rel="external" data-ajax="false" href="services.html">SERVICES</a></li>
-                        <li><a rel="external" data-ajax="false" href="projects.html">PROJECTS</a></li>
-                        <li><a rel="external" data-ajax="false" href="clients.html">CLIENTS</a></li>
-                        <li><a rel="external" data-ajax="false" href="contact.html">CONTACT</a></li>
-                        <li><a rel="external" data-ajax="false" href="http://blog.iforcetek.com" target="_blank">BLOG</a></li>
-                        <li><a rel="external" data-ajax="false" href="http://customervoicebox.blogspot.com" target="_blank">VOICEBOX</a></li>
-                    </ul>
-                </div>
-                <div class="show-mobile mob-bottom-nav" data-id="constantBottomNav" data-enhance="true" data-theme="c">
-                    <div data-role="navbar" data-iconpos="bottom" data-theme="c">
-                        <ul>
-                            <li><a href="/" data-icon="home" data-iconpos="bottom">Home</a></li>
-                            <li><a id="hook" href="#" data-icon="bars" data-iconpos="bottom">Menu</a></li>
-                            <li><a href="services.html" data-ajax="false" data-icon="gear" data-iconpos="bottom">Services</a></li>
-                            <li><a href="projects.html" data-ajax="false" data-icon="star" data-iconpos="bottom">Projects</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="clearfix-hor"></div>
-        </div>
-        <div class="center center_center" data-enhance="false">
-            <div class="desk-social-bar show-desktop social-bar">
-                <ul>
-                    <li><a target="_blank" href="https://www.facebook.com/Iforcetek" title="Become a fan">
-                        <img src="images/social/facebook_32.png" alt="Facebook" /></a></li>
-                    <li><a target="_blank" href="http://www.twitter.com/iforcetek" title="Follow my tweets">
-                        <img src="images/social/twitter_32.png" alt="Facebook" /></a></li>
-                    <li><a target="_blank" href="https://plus.google.com/105541264589044199743" title="Add to the circle">
-                        <img src="images/social/google_plus_32.png" alt="Facebook" /></a></li>
-                    <li><a target="_blank" href="http://www.linkedin.com/company/iforcetek" title="Check my linkeIn">
-                        <img src="images/social/linkedin_32.png" alt="linkedin" /></a></li>
-                    <li><a target="_blank" href="mailto:itenabler@iforcetek.com" title="Send me a email">
-                        <img src="images/social/email_32.png" alt="email" /></a></li>
-                </ul>
-            </div>
+<div class="center center_center" data-enhance="false">
+            
+    <?php include '_includes/desk-social-bar.php'; ?>
+ 
             <div class="attraction">
                 <div class="columns first_column">
                     <article class="outer_thin_shadow">
@@ -322,78 +229,5 @@
             </div>
             <div class="clearfix-hor"></div>
         </div>
-        <div class="footer" tabindex="-1" data-role="footer" data-enhance="false">
-            <div class="mob-social-bar social-bar show-mobile">
-                <ul>
-                    <li><a target="_blank" href="https://www.facebook.com/Iforcetek" title="Become a fan">
-                        <img src="images/social/facebook_32.png" alt="Facebook" /></a></li>
-                    <li><a target="_blank" href="http://www.twitter.com/iforcetek" title="Follow my tweets">
-                        <img src="images/social/twitter_32.png" alt="Facebook" /></a></li>
-                    <li><a target="_blank" href="https://plus.google.com/105541264589044199743" title="Add to the circle">
-                        <img src="images/social/google_plus_32.png" alt="Facebook" /></a></li>
-                    <li><a target="_blank" href="http://www.linkedin.com/company/iforcetek" title="Check my linkeIn">
-                        <img src="images/social/linkedin_32.png" alt="linkedin" /></a></li>
-                    <li><a target="_blank" href="mailto:itenabler@iforcetek.com" title="Send me a email">
-                        <img src="images/social/email_32.png" alt="email" /></a></li>
-                </ul>
-            </div>
-            <ul class="footer_ul">
-                <li>© 2013 iForce Tecknologies Inc, all rights reserved.</li>
-                <li><a href="privacy_policy.html" target="_blank">Privacy Policy</a></li>
-                <li><a href="mailto:itenabler@iforcetek.com" target="_blank">itenabler@iforcetek.com</a></li>
-                <li><a href="contact.html" target="_blank">425-898-8074</a></li>
-                <li><a href="#" class="false">Desktop version</a></li>
-            </ul>
-            <div class="clearfix-hor"></div>
-        </div>
-        <script type="text/javascript" src="js/jquery.1.9.1.un-min.js"></script>
-        <script type="text/javascript">
-            $(document).on('mobileinit', function () {
-                $.extend($.mobile, {
-                    ajaxFormsEnabled: false
-                });
-            });
-        </script>
-        <script type="text/javascript" src="js/jquery.mobile.1.3.2-min.js"></script>
-        <script type="text/javascript" src="js/jquery.poshytip.min.js"></script>
-        <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
-        <script type="text/javascript" src="js/site_script-min.js" class="afterMe"></script>
-        <script type="text/javascript">
-            $(function () {
-                $('.flexslider').flexslider({
-                    animation: 'slide'
-                });
-            });
-        </script>
-    </div>
-    <div data-role="page" id="dialog01" title="Subscribe to iForcetek Techfuse blog">
-        <div data-role="header">
-            <h1>Subscribe to iForcetek
-                <br />
-                Techfuse blog</h1>
-        </div>
-        <div data-role="content">
-            <form data-ajax="false" action="gdform.php" method="post">
-                <fieldset>
-                    <legend>Please fill out the form below, thank you.</legend>
-                    <br />
-                    <div>
-                        <label>Name</label>
-                        <input name="author2" type="text" class="inputclass" id="author2" size="24" />
-                    </div>
-                    <div>
-                        <label>E-mail</label>
-                        <input name="email" type="text" class="inputclass" id="email" />
-                    </div>
-                    <div style="width: 45%;" class="left">
-                        <input data-theme="e" type="reset" value="Reset Form" data-role="button" data-mini="true" />
-                        <input data-theme="e" data-ajax="false" data-role="button" data-mini="true" name="submit" type="submit" value="Subscribe" onclick="MM_validateForm('author2', '', 'R', 'email', '', 'R'); return document.MM_returnValue" />
-                    </div>
-                    <input type="hidden" name="subject" value="Form Submission" />
-                    <input type="hidden" name="redirect" value="thankyou.html" />
-                </fieldset>
-            </form>
-        </div>
-    </div>
-</body>
-</html>
+
+<?php include '_includes/footer.php' ?>
