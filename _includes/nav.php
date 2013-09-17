@@ -1,13 +1,3 @@
-<?php include 'functionsPHP.php'; makeLinkTag(1);
-
-    
-    $path = __FILE__;
-
-
-if(strpos($path, 'index.php')){
-    echo '<link href="css/flexslider-min.css" rel="stylesheet" type="text/css" />';
-}
-?>
     <!--[if lt IE 9]><script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <!--[if lt IE 9]><script type="text/javascript" src="js/respond.min.js"></script><![endif]-->
 </head>

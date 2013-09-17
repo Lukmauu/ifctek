@@ -5,7 +5,11 @@
     <meta name="description" content="iForcetek offers Technology Solutions specializing in  Web Application, Mobile Application, Startup Technology Solutions, Small Business Web Presence, Membership Management for Associations and Clubs, Online Client Engagement services, service maintenance and support" />
     <meta name="keywords" content="Technology Solutions Bellevue, Web App Development Bellevue, Web App Development Seattle, Mobile App Development Bellevue, Mobile App Development Seattle, Small Business Web Bellevue, Technology Solutions Seattle, Small Business Web Seattle, Membership Management, Startup Technology Solutions Bellevue, Startup Technology Solutions Seattle, Web App Development, Mobile Application, iOS, Android App, Windows 7 App, CRM Implementation, IT Consulting, Software Development, Mobile Application, iOS App Development, Android App Development, Windows App Development, AHTML5 App Development, Web Application Development, iforcetek, iForce Tecknologies, iForcetek Techfuse, iForcetek Customer VoiceBox" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<?php include '_includes.header.php';?>
+<?php 
+    include '_includes/functionsPHP.php';
+    makeLinkTag('', 'base');
+    include '_includes/nav.php';
+?>
     <div class="center about_center" data-enhance="false">
         <?php include '_includes/desk-social-bar.php';?>  
             <section class="about_first_section">

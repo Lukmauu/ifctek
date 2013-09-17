@@ -1,43 +1,68 @@
 <?php
 
-function makeScriptTag($number) {
-    if($number === 1){
-        $jquery =               file_get_contents('js/jquery.1.9.1.un-min.js');
-        $setupJqueryMobile =    file_get_contents('js/setupJqueryMobile.js');
-        $jqueryMobile =         file_get_contents('js/jquery.mobile.1.3.2-min.js');
-        $posytip =              file_get_contents('js/jquery.poshytip.min.js');
-        $flexlider =            file_get_contents('js/jquery.flexslider-min.js');
-        $siteScript =           file_get_contents('js/site_script-min.js');
+function makeScriptTag($array, $name_file){
+    if(!file_exists('js/'.$name_file.'meta.js')){
+        if(!strlen($name_file)){
+            $name_file = 'base';
+        }
+        
+        $base = array(
+            'js/jquery.1.9.1.un-min.js',
+            'js/setupJqueryMobile.js',
+            'js/jquery.mobile.1.3.2-min.js',
+            'js/jquery.poshytip.min.js',
+            'js/jquery.flexslider-min.js',
+            'js/site_script-min.js'
+        );
 
-        $filesJS = array($jquery, $setupJqueryMobile, $jqueryMobile, $posytip, $flexlider, $siteScript);
- 
-        file_put_contents('js/meta.js', $filesJS);
+        if(!empty($array)){
+            $base = array_merge($base, $array);
+        }
+        
+        $file = '';
+        foreach ($base as $key => $value) {
+            $file .= file_get_contents($value);
+        }
+        
+        file_put_contents('js/'.$name_file.'meta.js', $file);
         
         
     }
-    echo '<script type="text/javascript" src="js/meta.js"></script>';
+    echo '<script type="text/javascript" src="js/'.$name_file.'meta.js"></script>';
 }
 
 
-function makeLinkTag($number) {
-    if($number === 1){
-        $jqueryMobDefaut =      file_get_contents('css/jquery_mobile_default-min.css');
-        $jqueryMobIforcetek =   file_get_contents('css/mob-iforcetex-style-min.css');
-        $tipDargray =           file_get_contents('images/tip-darkgray/tip-darkgray.css');
-        $flexsliderCSS =        file_get_contents('css/flexslider-min.css');
-        $reset =                file_get_contents('css/reset-min.css');
-        $main =                 file_get_contents('css/main-min.css');
-        $nav =                  file_get_contents('css/nav-min.css');
-        $footer =               file_get_contents('css/footer-min.css');
-        $approach =             file_get_contents('css/approach-min.css');
 
-        $filesCSS = array($jqueryMobDefaut, $jqueryMobIforcetek, $tipDargray, $flexsliderCSS, $reset, $main, $nav, $footer, $approach);
- 
-        file_put_contents('css/meta.css', $filesCSS);
+function makeLinkTag($array, $name_file){
+    if(!file_exists('css/'.$name_file.'meta.css')){
+        if(!strlen($name_file)){
+            $name_file = 'base';
+        }
         
+        $base = array(
+            'css/jquery_mobile_default-min.css',
+            'css/mob-iforcetex-style-min.css',
+            'images/tip-darkgray/tip-darkgray.css',
+            'css/reset-min.css',
+            'css/main-min.css',
+            'css/nav-min.css',
+            'css/footer-min.css',
+            'css/approach-min.css'
+            );
+
+        if(!empty($array)){
+            $base = array_merge($base, $array);
+        }
+        
+        $file = '';
+        foreach ($base as $key => $value) {
+            $file .= file_get_contents($value);
+        }
+        
+        file_put_contents('css/'.$name_file.'meta.css', $file);
         
     }
-    echo '<link href="css/meta.css" rel="stylesheet" type="text/css" />';
+    echo '<link href="css/'.$name_file.'meta.css" rel="stylesheet" type="text/css" />';
 }
 
 ?>

@@ -1,16 +1,25 @@
-<!DOCTYPE html><html><head>
+<!DOCTYPE html>
+<html>
+<head>
     <title>iForcetek || Your trusted IT solutions partner</title>
     <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="description" content="iForcetek offers IT Solutions in the area of Web Application, Mobile Application, Software Implementation and maintenance support, Software Product development, customization and support." />
     <meta name="keywords" content="Technology Solutions Bellevue, Web App Development Bellevue, Web App Development Seattle, Mobile App Development Bellevue, Mobile App Development Seattle, Small Business Web Bellevue, Technology Solutions Seattle, Small Business Web Seattle, Membership Management, Startup Technology Solutions Bellevue, Startup Technology Solutions Seattle, Web App Development, Mobile Application, iOS, Android App, Windows 7 App, CRM Implementation, IT Consulting, Software Development, Mobile Application, iOS App Development, Android App Development, Windows App Development, AHTML5 App Development, Web Application Development, iforcetek, iForce Tecknologies, iForcetek Techfuse, iForcetek Customer VoiceBox" />
-<?php include '_includes/header.php'; ?>
-
-<div class="center center_center" data-enhance="false">
-            
-    <?php include '_includes/desk-social-bar.php'; ?>
- 
+    <?php 
+    include '_includes/functionsPHP.php';
+    
+    makeLinkTag(array('css/flexslider-min.css'), 'index.php');
+    
+    include '_includes/nav.php';
+    
+    ?>
+    
+        <div class="center center_center" data-enhance="false">
+            <div class="desk-social-bar show-desktop social-bar">
+                <?php include '_includes/social-bar.php';?>
+            </div>
             <div class="attraction">
                 <div class="columns first_column">
                     <article class="outer_thin_shadow">
@@ -229,5 +238,40 @@
             </div>
             <div class="clearfix-hor"></div>
         </div>
-
-<?php include '_includes/footer.php' ?>
+        <?php include '_includes/footer.php'?>
+        <?php makeScriptTag(array('js/jquery.flexslider-min.js'), 'index.php');?>
+        <script type="text/javascript">
+            $(function(){$('.flexslider').flexslider({animation:'slide'});});
+        </script>
+    <?php echo '</div>' /* END .outer-container */ ?>
+    <div data-role="page" id="dialog01" title="Subscribe to iForcetek Techfuse blog">
+        <div data-role="header">
+            <h1>Subscribe to iForcetek
+                <br />
+                Techfuse blog</h1>
+        </div>
+        <div data-role="content">
+            <form data-ajax="false" action="gdform.php" method="post">
+                <fieldset>
+                    <legend>Please fill out the form below, thank you.</legend>
+                    <br />
+                    <div>
+                        <label>Name</label>
+                        <input name="author2" type="text" class="inputclass" id="author2" size="24" />
+                    </div>
+                    <div>
+                        <label>E-mail</label>
+                        <input name="email" type="text" class="inputclass" id="email" />
+                    </div>
+                    <div style="width: 45%;" class="left">
+                        <input data-theme="e" type="reset" value="Reset Form" data-role="button" data-mini="true" />
+                        <input data-theme="e" data-ajax="false" data-role="button" data-mini="true" name="submit" type="submit" value="Subscribe" onclick="MM_validateForm('author2', '', 'R', 'email', '', 'R'); return document.MM_returnValue" />
+                    </div>
+                    <input type="hidden" name="subject" value="Form Submission" />
+                    <input type="hidden" name="redirect" value="thankyou.html" />
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
