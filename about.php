@@ -11,7 +11,9 @@
     include '_includes/nav.php';
 ?>
     <div class="center about_center" data-enhance="false">
-        <?php include '_includes/desk-social-bar.php';?>  
+            <div class="desk-social-bar show-desktop social-bar">
+                <?php include '_includes/social-bar.php';?>
+            </div>
             <section class="about_first_section">
                 <div class="containerAbout">
                     <div class="outer_thin_shadow">
@@ -88,5 +90,13 @@
                             </p>
                         </article>
                         <div class="clearfix-hor"></div>
-                    </div>
-<?php include '_includes.footer.php';?>
+                     </div>
+                </div>
+            </section>
+            <div class="clearfix-hor"></div>
+        </div>
+        <?php include '_includes/footer.php'?>
+        <?php 
+        $file_name = preg_replace('/\.php$/', '', basename($_SERVER['PHP_SELF']));
+        makeScriptTag('', 'base', $file_name);?>
+</div></body></html>

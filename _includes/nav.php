@@ -37,24 +37,24 @@
             <img class="show-mobile mob-top-img" src="images/background_iforcetex_logo2.png" width="202" height="68" alt="mob-top-img"
                 style="width: 202px; margin: 0 auto;" />
             <ul class="nav show-desktop" data-enhance="false">
-                <li><a rel="external" data-ajax="false" href="index.html">HOME</a></li>
-                <li><a rel="external" data-ajax="false" href="about.html">ABOUT</a></li>
-                <li><a rel="external" data-ajax="false" href="services.html">SERVICES</a></li>
-                <li><a rel="external" data-ajax="false" href="projects.html">PROJECTS</a></li>
-                <li><a rel="external" data-ajax="false" href="clients.html">CLIENTS</a></li>
-                <li><a rel="external" data-ajax="false" href="contact.html">CONTACT</a></li>
+                <li><a rel="external" data-ajax="false" href="index.php">HOME</a></li>
+                <li><a rel="external" data-ajax="false" href="about.php">ABOUT</a></li>
+                <li><a rel="external" data-ajax="false" href="services.php">SERVICES</a></li>
+                <li><a rel="external" data-ajax="false" href="projects.php">PROJECTS</a></li>
+                <li><a rel="external" data-ajax="false" href="clients.php">CLIENTS</a></li>
+                <li><a rel="external" data-ajax="false" href="contact.php">CONTACT</a></li>
                 <li><a rel="external" data-ajax="false" href="http://blog.iforcetek.com" target="_blank">BLOG</a></li>
                 <li><a rel="external" data-ajax="false" href="http://customervoicebox.blogspot.com" target="_blank">VOICEBOX</a></li>
             </ul>
             <div class="show-mobile" data-role="header" data-id="constantNav" data-theme="c">
                 <div id="mob-nav-bar" class="show-mobile" data-role="navbar" data-enhance="true" data-theme="c">
                     <ul>
-                        <li><a rel="external" data-ajax="false" href="index.html" class="ui-btn-active ui-state-persist">HOME</a></li>
-                        <li><a rel="external" data-ajax="false" href="about.html">ABOUT</a></li>
-                        <li><a rel="external" data-ajax="false" href="services.html">SERVICES</a></li>
-                        <li><a rel="external" data-ajax="false" href="projects.html">PROJECTS</a></li>
-                        <li><a rel="external" data-ajax="false" href="clients.html">CLIENTS</a></li>
-                        <li><a rel="external" data-ajax="false" href="contact.html">CONTACT</a></li>
+                        <li><a rel="external" data-ajax="false" href="index.php">HOME</a></li>
+                        <li><a rel="external" data-ajax="false" href="about.php">ABOUT</a></li>
+                        <li><a rel="external" data-ajax="false" href="services.php">SERVICES</a></li>
+                        <li><a rel="external" data-ajax="false" href="projects.php">PROJECTS</a></li>
+                        <li><a rel="external" data-ajax="false" href="clients.php">CLIENTS</a></li>
+                        <li><a rel="external" data-ajax="false" href="contact.php">CONTACT</a></li>
                         <li><a rel="external" data-ajax="false" href="http://blog.iforcetek.com" target="_blank">BLOG</a></li>
                         <li><a rel="external" data-ajax="false" href="http://customervoicebox.blogspot.com" target="_blank">VOICEBOX</a></li>
                     </ul>
@@ -64,8 +64,8 @@
                         <ul>
                             <li><a href="/" data-icon="home" data-iconpos="bottom">Home</a></li>
                             <li><a id="hook" href="#" data-icon="bars" data-iconpos="bottom">Menu</a></li>
-                            <li><a href="services.html" data-ajax="false" data-icon="gear" data-iconpos="bottom">Services</a></li>
-                            <li><a href="projects.html" data-ajax="false" data-icon="star" data-iconpos="bottom">Projects</a></li>
+                            <li><a href="services.php" data-ajax="false" data-icon="gear" data-iconpos="bottom">Services</a></li>
+                            <li><a href="projects.php" data-ajax="false" data-icon="star" data-iconpos="bottom">Projects</a></li>
                         </ul>
                     </div>
                 </div>

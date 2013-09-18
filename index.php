@@ -239,7 +239,13 @@
             <div class="clearfix-hor"></div>
         </div>
         <?php include '_includes/footer.php'?>
-        <?php makeScriptTag(array('js/jquery.flexslider-min.js'), 'index.php');?>
+        <?php 
+        
+        $file_name = preg_replace('/\.php$/', '', basename($_SERVER['PHP_SELF']));
+        
+        makeScriptTag(array('js/jquery.flexslider-min.js'), 'index.php', $file_name); 
+
+        ?>
         <script type="text/javascript">
             $(function(){$('.flexslider').flexslider({animation:'slide'});});
         </script>
